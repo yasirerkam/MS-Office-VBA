@@ -14,7 +14,7 @@ Sub DeleteAllMsoInPPT()
     
     If objApp.ActivePresentation Is Nothing Then Exit Sub
     
-    For i = 9 To 14
+    For i = 1 To 20
         Set objSlide = objApp.ActivePresentation.Slides(i)
         For Each ObjShp In objSlide.Shapes
             Select Case ObjShp.Type
